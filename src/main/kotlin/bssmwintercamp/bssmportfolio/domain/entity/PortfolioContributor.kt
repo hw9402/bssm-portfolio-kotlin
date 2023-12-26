@@ -3,7 +3,7 @@ package bssmwintercamp.bssmportfolio.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class Likes(
+class PortfolioContributor(
     portfolio: Portfolio,
     member: Member,
 ): BaseDateTime() {
@@ -16,7 +16,7 @@ class Likes(
     @JoinColumn(
         name = "portfolio_id",
         nullable = false,
-        foreignKey = ForeignKey(name = "FK_LIKE_PORTFOLIO_ID")
+        foreignKey = ForeignKey(name = "FK_PORTFOLIO_CONTRIBUTOR_PORTFOLIO_ID")
     )
     var portfolio: Portfolio = portfolio
         protected set
@@ -25,7 +25,7 @@ class Likes(
     @JoinColumn(
         name = "member_id",
         nullable = false,
-        foreignKey = ForeignKey(name = "FK_LIKE_MEMBER_ID")
+        foreignKey = ForeignKey(name = "FK_PORTFOLIO_CONTRIBUTOR_MEMBER_ID")
     )
     var member: Member = member
         protected set

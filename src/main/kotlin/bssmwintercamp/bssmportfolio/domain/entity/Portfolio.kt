@@ -72,4 +72,12 @@ class Portfolio(
     )
     var member: Member = member
         protected set
+
+    @OneToMany(mappedBy = "portfolio", cascade = [CascadeType.ALL], orphanRemoval = true)
+    var comments: List<Comment> = mutableListOf()
+        protected set
+
+    @OneToMany(mappedBy = "portfolio", cascade = [CascadeType.ALL], orphanRemoval = true)
+    var contributors: List<PortfolioContributor> = mutableListOf()
+        protected set
 }

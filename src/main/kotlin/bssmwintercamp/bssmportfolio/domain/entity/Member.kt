@@ -31,6 +31,10 @@ class Member private constructor(
     var authority: Authority = authority
         protected set
 
+    @OneToMany(mappedBy = "portfolio", cascade = [CascadeType.ALL], orphanRemoval = true)
+    var contributors: List<PortfolioContributor> = mutableListOf()
+        protected set
+
     companion object {
         fun createAdmin(
             email: String,
