@@ -8,6 +8,8 @@ plugins {
     kotlin("jvm") version "1.9.21"
     kotlin("plugin.spring") version "1.9.21"
     kotlin("plugin.jpa") version "1.9.21"
+    kotlin("plugin.allopen") version "1.3.71"
+    kotlin("plugin.noarg") version "1.3.71"
 }
 
 group = "bssm-winter-camp"
