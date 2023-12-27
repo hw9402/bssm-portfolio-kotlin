@@ -17,7 +17,7 @@ class PortfolioServiceTest(
 ) : BehaviorSpec({
 
     beforeSpec {
-        val dto = CreateMemberDto("qkrwjdgh0904@naver.com", "1234", "박정호")
+        val dto = CreateMemberDto("mhw35689402@gmail.com", "1234", "마현우")
         memberService.create(dto)
 
         val videoFileDto = CreateAttachFileDto("fileUid01", "filePath", "fileName", 100L)

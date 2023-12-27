@@ -15,7 +15,7 @@ class Portfolio(
     videoFile: AttachFile,
     thumbnailFile: AttachFile,
     member: Member,
-) {
+):BaseDateTime() {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0L
@@ -55,7 +55,7 @@ class Portfolio(
     var videoFile: AttachFile = videoFile
         protected set
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(
         name = "thumbnail_file_id",
         nullable = false,

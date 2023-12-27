@@ -39,10 +39,6 @@ class Member private constructor(
     var comments: List<Comment> = mutableListOf()
         protected set
 
-    @OneToMany(mappedBy = "member", cascade = [CascadeType.ALL], orphanRemoval = true)
-    var likes: List<Likes> = mutableListOf()
-        protected set
-
     companion object {
         fun createAdmin(
             email: String,
