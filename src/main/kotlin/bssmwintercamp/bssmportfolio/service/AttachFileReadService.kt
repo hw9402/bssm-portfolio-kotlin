@@ -11,7 +11,7 @@ class AttachFileReadService(
     private val attachFileRepository: AttachFileRepository,
 ) {
 
-    fun findByFileUidOrThrow(fileUid: String): AttachFile? {
+    fun findByFileUidOrThrow(fileUid: String): AttachFile {
         return attachFileRepository.findByFileUid(fileUid)
     }
 }

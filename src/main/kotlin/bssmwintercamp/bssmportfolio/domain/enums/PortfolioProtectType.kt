@@ -1,8 +1,8 @@
 package bssmwintercamp.bssmportfolio.domain.enums
 
-enum class PortfolioProtectedType(
+enum class PortfolioProtectType(
     val description: String,
 ) {
-    PUBLIC("공기"),
+    PUBLIC("공개"),
     PRIVATE("비공개"),
 }

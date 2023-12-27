@@ -1,6 +1,6 @@
 package bssmwintercamp.bssmportfolio.domain.entity
 
-import bssmwintercamp.bssmportfolio.domain.enums.PortfolioProtectedType
+import bssmwintercamp.bssmportfolio.domain.enums.PortfolioProtectType
 import bssmwintercamp.bssmportfolio.domain.enums.PortfolioThemeType
 import jakarta.persistence.*
 
@@ -8,7 +8,7 @@ import jakarta.persistence.*
 class Portfolio(
     title: String,
     theme: PortfolioThemeType,
-    protectedType: PortfolioProtectedType,
+    protectedType: PortfolioProtectType,
     description: String,
     webUrl: String,
     gitUrl: String,
@@ -31,7 +31,7 @@ class Portfolio(
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    var protectedType: PortfolioProtectedType = protectedType
+    var protectedType: PortfolioProtectType = protectedType
         protected set
 
     @Column(columnDefinition = "TEXT")
