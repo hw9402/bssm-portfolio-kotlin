@@ -10,8 +10,8 @@ import org.springframework.data.repository.findByIdOrNull
 @SpringBootTest
 class MemberServiceTest(
     private val memberService: MemberService,
-    private val memberRepository: MemberRepository
-): BehaviorSpec({
+    private val memberRepository: MemberRepository,
+) : BehaviorSpec({
     given("멤버 데이터 생성") {
         val dto = CreateMemberDto("mhw35689402@gmail.com", "1234", "마현우")
 
@@ -23,5 +23,4 @@ class MemberServiceTest(
             }
         }
     }
-}) {
-}
+})

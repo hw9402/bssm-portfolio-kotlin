@@ -8,8 +8,8 @@ class Member private constructor(
     email: String,
     password: String,
     name: String,
-    authority: Authority
-): BaseDateTime() {
+    authority: Authority,
+) : BaseDateTime() {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0L

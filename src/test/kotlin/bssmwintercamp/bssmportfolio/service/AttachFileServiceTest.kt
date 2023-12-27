@@ -8,8 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest
 @SpringBootTest
 class AttachFileServiceTest(
     private val attachFileService: AttachFileService,
-    private val attachFileReadService: AttachFileReadService
-): BehaviorSpec({
+    private val attachFileReadService: AttachFileReadService,
+) : BehaviorSpec({
     given("첨부파일 데이터 생성") {
         val dto = CreateAttachFileDto("fileUid", "fileName", "filePath", 100L)
 

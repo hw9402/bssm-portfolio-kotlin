@@ -11,8 +11,8 @@ class AttachFile(
     fileUid: String,
     filePath: String,
     fileName: String,
-    fileSize: Long
-): BaseDateTime() {
+    fileSize: Long,
+) : BaseDateTime() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

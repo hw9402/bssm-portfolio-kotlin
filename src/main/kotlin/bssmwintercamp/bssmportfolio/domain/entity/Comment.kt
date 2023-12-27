@@ -7,8 +7,8 @@ class Comment(
     content: String,
     portfolio: Portfolio,
     member: Member,
-    parent: Comment
-): BaseDateTime() {
+    parent: Comment,
+) : BaseDateTime() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

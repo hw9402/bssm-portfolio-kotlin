@@ -4,5 +4,5 @@ enum class PortfolioThemeType(
     val description: String,
 ) {
     WEB("웹"),
-    APP("앱")
+    APP("앱"),
 }

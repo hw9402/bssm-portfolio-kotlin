@@ -14,7 +14,7 @@ class Portfolio(
     gitUrl: String,
     videoFile: AttachFile,
     thumbnailFile: AttachFile,
-    member: Member
+    member: Member,
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class MemberController(
-    private val memberService: MemberService
+    private val memberService: MemberService,
 ) {
 
     @PostMapping(ApiPath.MEMBER_V1)

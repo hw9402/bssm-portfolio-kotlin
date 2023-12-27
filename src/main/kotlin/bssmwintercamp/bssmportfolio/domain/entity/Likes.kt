@@ -6,7 +6,7 @@ import jakarta.persistence.*
 class Likes(
     portfolio: Portfolio,
     member: Member,
-): BaseDateTime() {
+) : BaseDateTime() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

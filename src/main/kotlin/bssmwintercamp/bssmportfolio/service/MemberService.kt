@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class MemberService(
-    private val memberRepository: MemberRepository
+    private val memberRepository: MemberRepository,
 ) {
     fun create(dto: CreateMemberDto): Long {
         val member = dto.toEntity()
